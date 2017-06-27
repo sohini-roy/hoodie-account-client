@@ -164,7 +164,7 @@ test('signIn with token', function (t) {
   .catch(t.error)
 })
 
-test('signIn with token should trigger reauthenticate', function(t){
+test('signIn with token should trigger signin', function(t){
   t.plan(1)
 
   var state = {
