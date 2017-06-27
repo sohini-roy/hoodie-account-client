@@ -164,7 +164,7 @@ test('signIn with token', function (t) {
   .catch(t.error)
 })
 
-test('signIn with token should trigger signin', function(t){
+test('signIn with token should trigger signin', function (t) {
   t.plan(1)
 
   var state = {
@@ -197,10 +197,10 @@ test('signIn with token should trigger signin', function(t){
     token: 'token123'
   })
 
-  .then(function (accountProperties){
+  .then(function (accountProperties) {
     t.deepEqual(state.emitter.emit.lastCall.arg, 'signin')
 
-    simple.restore();
+    simple.restore()
   })
 
   .catch(t.error)
